@@ -65,6 +65,7 @@ img {
 }
 
 /* Button */
+
 .btn {
   font-weight: 600;
   font-size: 14px;
@@ -101,7 +102,26 @@ img {
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438));
+  background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../img/Bg_electronic.jpg);
   background-position: center;
   background-size: cover;
+}
+
+
+/* About */
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title .line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--c-brand);
+  margin: 16px auto 24px auto;
+}
+
+.section-title p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
