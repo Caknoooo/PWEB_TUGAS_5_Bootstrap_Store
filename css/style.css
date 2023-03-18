@@ -190,3 +190,133 @@ img {
   font-size: 34px;
   flex: none;
 }
+
+/* Review */
+.review small {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--c-brand);
+}
+
+.review-head{
+  position: relative;
+}
+
+.review-head::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: -14px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.review-img {
+  width: 4rem;
+  height: 4rem;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+
+/* Contact */
+#contact {
+  position: relative;
+  z-index: 2;
+}
+
+#contact::after {
+  content: "";
+  width: 100%;
+  height: 70%;
+  background-color: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8));
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#contact .form-control {
+  border-radius: 0;
+}
+
+#contact .form-control:focus{
+  padding-top: 120px;
+}
+ 
+/* Footer Section */
+.footer-section-page {
+  background-color: #4e4946;
+}
+
+.footer-section-page .footer-section-page-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-section-page .footer-section-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-section-text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-size: medium;
+}
+
+@media (min-width: 640px) {
+  .footer-section-text {
+    text-align: center;
+  }
+
+  .footer-section-icon {
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+
+.footer-section-icon {
+  display: flex;
+  /* margin-top: 1rem; */
+}
+
+.footer-section-link {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.footer-section-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.footer-section-svg-size {
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer-section-svg {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
