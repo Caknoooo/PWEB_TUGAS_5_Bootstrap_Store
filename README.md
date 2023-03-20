@@ -1,2 +1,2 @@
-# PWEB_TUGAS_5_Electronic_Store_Page
-Membuat website Toko Elektronik dengan menggunakan Bootstrap 5
+# PWEB_TUGAS_5_Bootstrap_Store
+Membuat website Toko olahraga dengan menggunakan Bootstrap 5
